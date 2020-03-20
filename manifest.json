@@ -1,0 +1,21 @@
+{
+    "name": "test",
+    "description": "testsfsdf",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+            "matches": ["http://wp.ce37051.tmweb.ru/"],
+            "js": ["script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_title": "MY Title",
+        "default_popup": "index.html"
+    },
+
+    "permissions": [
+        "tabs"
+    ]
+}

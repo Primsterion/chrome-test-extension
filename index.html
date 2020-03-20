@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        label{
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .buttons{
+            display: flex;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .buttons button:first-child{
+            margin-right: 10px;
+        }
+
+        button{
+            background: rgb(7, 125, 204);
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            transition: .3s;
+            cursor: pointer;
+            width: 50%;
+            padding: 5px;
+        }
+
+        button:hover{
+            background: rgb(0, 153, 255);
+        }
+    </style>
+    <label for="search">Поиск</label>
+    <input type="text" class="input-search" id="search">
+    <div class="buttons">
+        <button class="search-btn">Поиск</button>
+        <button class="reset-btn">Сбросить</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
